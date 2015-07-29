@@ -7,7 +7,7 @@ C:\Users\mccoppinR>vagrant package --base box_to_package
 
 Run Script as root: sudo -u root command
 
-Big picture
+*BIG PICTURE*
 * Powershell 
   * presents options for os (linux, windows, etc), software suite (FLEx, Bloom, etc)
     * uses software suite to load test scripts from proper repo
