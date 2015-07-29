@@ -9,8 +9,8 @@ import time
 
 from sikuli import *
 
-sys.path.insert(0, '/home/vagrant/linux_setup/sikuli/examples')
-sys.path.insert(0, '/home/vagrant/linux_setup/sikuli/examples/test_and_log')
+sys.path.insert(0, '/home/vagrant/Integration-Testing-Framework/sikuli/examples')
+sys.path.insert(0, '/home/vagrant/Integration-Testing-Framework/sikuli/examples/test_and_log')
 from yattag import Doc
 
 class TestHelper:
@@ -41,13 +41,13 @@ class TestHelper:
         
         # Add the CSS stylesheet to the log folder, if it's not there already.
         if not os.path.exists(log_folder + "/log.css"):
-            shutil.copyfile("/home/vagrant/linux_setup/sikuli/examples/test_helper.sikuli/log.css",
+            shutil.copyfile("/home/vagrant/Integration-Testing-Framework/sikuli/examples/test_helper.sikuli/log.css",
                             log_folder + "/log.css")
 
         # Add the display_log script to /vagrant, if it's not there
         # (so it's accessible from the host machine)
         if not os.path.exists("/vagrant/display_log.py"):
-            shutil.copyfile("/home/vagrant/linux_setup/sikuli/examples/test_helper.sikuli/display_log.py",
+            shutil.copyfile("/home/vagrant/Integration-Testing-Framework/sikuli/examples/test_helper.sikuli/display_log.py",
                             "/vagrant/display_log.py")
 
     #################################
@@ -138,7 +138,7 @@ class TestHelper:
 
     def restart_flex(self):
         self.write_fail("Closing and restarting FLEx")
-        # os.system("sudo -u vagrant /home/vagrant/linux_setup/flex/flex_restart.sh")
+        # os.system("sudo -u vagrant /home/vagrant/Integration-Testing-Framework/flex/flex_restart.sh")
         import restart_flex
         restart_flex.restart_flex()
 
