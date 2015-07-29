@@ -10,7 +10,7 @@ Run Script as root: sudo -u root command
 Big picture
 * Powershell 
  * presents options for os, software suite
-  * uses software suite to load list of scripts from proper repo
+   * uses software suite to load list of scripts from proper repo
    * uses software suite chosen to edit Vagrant file (perl script?)
     * for right suite 
     * for right test scripts (from repo)
@@ -18,9 +18,9 @@ Big picture
  * calls vagrant up followed by vagrant reload
 
 * Vagrant
-** Installs software and scripts
-** Boots software and scripts in "auto run" folder
-** Reboot login starts scripts
+ * Installs software and scripts
+ * Boots software and scripts in "auto run" folder
+ * Reboot login starts scripts
 
 * Python/Sikuli
 ** Sikuli control scripts
