@@ -9,13 +9,13 @@ Run Script as root: sudo -u root command
 
 Big picture
 * Powershell 
-  * presents options for os, software suite
-    * uses software suite to load list of scripts from proper repo
-    * uses software suite chosen to edit Vagrant file (perl script?)
-      * for right suite 
-      * for right test scripts (from repo)
-    * choose scripts to use, write to file
-  * calls vagrant up followed by vagrant reload
+ * presents options for os, software suite
+  * uses software suite to load list of scripts from proper repo
+   * uses software suite chosen to edit Vagrant file (perl script?)
+    * for right suite 
+    * for right test scripts (from repo)
+   * choose scripts to use, write to file
+ * calls vagrant up followed by vagrant reload
 
 * Vagrant
 ** Installs software and scripts
