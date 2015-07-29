@@ -9,12 +9,14 @@ Run Script as root: sudo -u root command
 
 Big picture
 * Powershell 
- * presents options for os, software suite
-   * uses software suite to load list of scripts from proper repo
-   * uses software suite chosen to edit Vagrant file (perl script?)
-    * for right suite 
-    * for right test scripts (from repo)
-   * choose scripts to use, write to file
+  * presents options for os (linux, windows, etc), software suite (FLEx, Bloom, etc)
+    * uses software suite to load test scripts from proper repo
+    * uses software suite to edit Vagrant file (perl script?)
+      * for right suite link
+      * for right test scripts link (from repo)
+    * interface allows user to choose scripts to use
+      * scripts written to file
+      * later read by bash
  * calls vagrant up followed by vagrant reload
 
 * Vagrant
@@ -22,25 +24,25 @@ Big picture
  * Boots software and scripts in "auto run" folder
  * Reboot login starts scripts
 
-* Python/Sikuli
-** Sikuli control scripts
-** Report errors
+* Bash/Shell
+  * Select "use scripts"
+  * Startup chosen software
+  * Python/Sikuli
+    * Sikuli control scripts
+    * Report errors
 
 *REPORT EVERY ERROR*
 * If expect breaks, needs to be reported
 
 
-Need to do:
-
 Generica
 
   * Install VirtualBox
-
   * Install Git  =  put git commands on windows shell
-
   * Install Vagrant
-
-  * Use Vagrant File (Ryan’s) OR follow tutorial at Vagrant website. Boot into a linux machine!
-
-  * Auto open FLEX and run script sikuli_runall.sh by Vagrantfile
+  * Use VagrantFile  OR follow tutorial at Vagrant website. Boot into a linux machine!
+    * Use vagrant/installauto to create base machine
+    * Package base machine
+    * Use vagrant/flexauto (or other) to install flex and tests for auto testing
+      * Auto-opens FLEX and runs script sikuli_runall.sh (or other)
 
