@@ -46,3 +46,5 @@ Generica
     * Use vagrant/flexauto (or other) to install flex and tests for auto testing
       * Auto-opens FLEX and runs script sikuli_runall.sh (or other)
 
+Helpful documentation
+https://docs.google.com/document/d/1wCPwGvsdLk8Luqwc88LKxAuzzPnOuiFySG3Uw9fPhPc/edit?usp=sharing
