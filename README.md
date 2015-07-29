@@ -7,9 +7,24 @@ C:\Users\mccoppinR>vagrant package --base box_to_package
 
 Run Script as root: sudo -u root command
 
-Set permissions
-* find . -name '.*' -prune -o -exec chmod u=rwx,g=rx,o=r {} +
-* chown -R vagrant folder/
+Big picture
+* Powershell 
+** presents options for os, software suite
+*** uses software suite to load list of scripts from proper repo
+*** uses software suite chosen to edit Vagrant file (perl script?)
+**** for right suite 
+**** for right test scripts (from repo)
+*** choose scripts to use, write to file
+** calls vagrant up followed by vagrant reload
+
+* Vagrant
+** Installs software and scripts
+** Boots software and scripts in "auto run" folder
+** Reboot login starts scripts
+
+* Python/Sikuli
+** Sikuli control scripts
+** Report errors
 
 *REPORT EVERY ERROR*
 * If expect breaks, needs to be reported
