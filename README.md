@@ -1,5 +1,6 @@
 # Integration-Testing-Framework
 Project to store files related to automating testing for SIL Software on Linux
+**This project has been continued at [SIL Integration Testing Framework](https://github.com/sillsdev/Integration-Testing-Framework).**
 
 Packaging a Vagrant Box: 
 C:\Users\mccoppinR>vagrant package --base box_to_package
