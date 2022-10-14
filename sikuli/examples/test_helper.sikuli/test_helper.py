@@ -1,16 +1,14 @@
 from __future__ import with_statement
+from a_setup import *
+from sikuli import *
 import glob
-import os
 import platform
 import shutil
-import sys
 import time
 
 
-from sikuli import *
-
-sys.path.insert(0, '/home/vagrant/Integration-Testing-Framework/sikuli/examples')
-sys.path.insert(0, '/home/vagrant/Integration-Testing-Framework/sikuli/examples/test_and_log')
+if wd + "/examples/test_and_log" not in sys.path:
+    sys.path.append(wd + "/examples/test_and_log")
 from yattag import Doc
 
 class TestHelper:
@@ -35,7 +33,7 @@ class TestHelper:
         else:
             glob_result = glob.glob(self.folder + "/*.log")
             if len(glob_result) == 1:
-                self.partial_html = glob_result
+                self.partial_html = glob_result[0]
             else:
                 self.partial_html = self.folder + "/mylog.log"
         
@@ -195,8 +193,11 @@ class TestHelper:
         elif os.path.isfile(img):
             return img
         
-        # Look in all the sys.path dirs to see if it's there
-        for dir in sys.path:
+        # Look in all the SIKULI_IMAGE_PATH dirs to see if it's there
+        image_dirs = list(getImagePath())
+        image_dirs.insert(0, getBundlePath())
+        for dir in image_dirs:
+            print dir
             if dir[-1] != '/':
                 dir = dir + '/'
             # If found, return the full path

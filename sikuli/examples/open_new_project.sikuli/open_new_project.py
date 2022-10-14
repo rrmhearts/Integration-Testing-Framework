@@ -1,6 +1,5 @@
 from sikuli import *
-import sys, os, subprocess
-sys.path.insert(0, '/home/vagrant/Integration-Testing-Framework/sikuli/examples')
+import os
 from test_helper import TestHelper
 
 open_project_helper = TestHelper("open_flex")
@@ -17,7 +16,7 @@ def green_handler(event):
     #os.system(". /home/vagrant/Integration-Testing-Framework/flex/flex_restart.sh")
     #subprocess.call(["sudo", "/home/vagrant/Integration-Testing-Framework/flex/flex_restart.sh"], shell=True)
     #subprocess.Popen("sudo -u vagrant /home/vagrant/Integration-Testing-Framework/flex/flex_restart.sh")
-    os.system("sudo /home/vagrant/Integration-Testing-Framework/flex/memory_clean.sh")
+    os.system("sudo /home/vagrant/Integration-Testing-Framework/scripts/memory_clean.sh")
     open_project_helper.restart_flex()
     open_project_helper.write("Successfully restarted flex.")  
 
