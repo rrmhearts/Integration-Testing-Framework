@@ -1,6 +1,12 @@
 # Integration-Testing-Framework
-Project to store files related to automating testing for SIL Software on Linux
+Project to store files related to automating testing for SIL Software on Linux and Windows
 **This project has been continued at [SIL Integration Testing Framework](https://github.com/sillsdev/Integration-Testing-Framework).**
+
+Contributors
+* SIL LS Dev Team
+* Ryan McCoppin
+* Jessica Dawson
+* Karl Rogers
 
 Packaging a Vagrant Box: 
 C:\Users\mccoppinR>vagrant package --base box_to_package
@@ -35,9 +41,7 @@ Run Script as root: sudo -u root command
 *REPORT EVERY ERROR*
 * If expect breaks, needs to be reported
 
-
 Generica
-
   * Install VirtualBox
   * Install Git  =  put git commands on windows shell
   * Install Vagrant
